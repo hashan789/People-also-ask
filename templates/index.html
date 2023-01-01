@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/scraper.js') }}"></script>
+    <title>"People also ask" web scraper</title>
+</head>
+<body>
+    <h1 class="center-heading">People also ask web scraper</h1>
+
+      <p>Please select an option</p>
+      <div class="search">
+        <div>
+          <input type="radio" id="google" name="search" value="google" onclick="get_search_method()">
+          <label for="google">Google</label><br>
+        </div>
+        <div>
+          <input type="radio" id="bing" name="search" value="bing" onclick="get_search_method()">
+          <label for="bing">Bing</label><br>
+        </div>
+      </div>
+
+      <p>Please enter a keyword that you seek for</p>
+      <div class="search_method">
+        <div class="hide" id="google_search">
+            <form action="." method="post">
+                <input type="text" name="google" placeholder="Enter a keyword on google"/>
+                <button type="submit" onclick="search_on_google()">search</button>
+            </form>
+        </div>
+        <div class="hide" id="bing_search">
+            <form action="." method="post">
+                <input type="text" name="bing" placeholder="Enter a keyword on bing"/>
+                <button type="submit" onclick="search_on_bing()">search</button>
+            </form>
+        </div>
+      </div>
+
+    <table onclick="result()">
+        <tr>
+            <th>No</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+    <!-- <script src="scraper.js"></script> -->
+
+</body>
+</html>

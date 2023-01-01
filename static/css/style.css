@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Poppins:wght@300&family=Secular+One&display=swap');
+
+*{
+    font-family: 'Secular One', sans-serif;
+}
+
+.center-heading{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+
+table {
+    font-family: 'Secular One', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+p{
+    margin-left: 10vh;
+}
+
+.search_method{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_method div{
+    margin: 5vh;
+}
+
+.search_method input{
+    width: 20vw;
+}
+
+.hide{
+    display:none;
+}
